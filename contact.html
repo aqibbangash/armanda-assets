@@ -291,6 +291,8 @@
 
 			<div class="row input-container" style="margin-left:auto; margin-right:auto;">
 
+
+				<form class="" method="post" action="send_feedback_mail.php" >
 					<div class="col-md-12">
 						<div class="styled-input wide">
 							<input type="text" class="contact-input" required />
@@ -300,28 +302,30 @@
 
 					<div class="col-md-6 col-sm-12">
 						<div class="styled-input">
-							<input type="text" class="contact-input" required />
+							<input name="email_address" type="text" class="contact-input" required />
 							<label>Email</label>
 						</div>
 					</div>
+
 					<div class="col-md-6 col-sm-12">
 						<div class="styled-input" style="float:right;">
-							<input type="text" class="contact-input" required />
+							<input name="first_name" type="text" class="contact-input" required />
 							<label>Phone Number</label>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="styled-input wide">
-							<textarea required class="contact-input"></textarea>
-							<label>Message</label>
 						</div>
 					</div>
 
 					<div class="col-md-12">
-			 <div class="g-recaptcha pull-right" data-sitekey="6LeIEsMUAAAAAH4EYoslNkyGtYp8mMxNn6joWBjA" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-			 <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-			 <div class="help-block with-errors"></div>
-		 			</div>
+						<div class="styled-input wide">
+							<input name="comments" type="textarea" class="contact-input" required />
+							<label>Message</label>
+						</div>
+					</div>
+
+					<!-- <div class="col-md-12">
+						 <div class="g-recaptcha pull-right" data-sitekey="6LeIEsMUAAAAAH4EYoslNkyGtYp8mMxNn6joWBjA" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+						 <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+						 <div class="help-block with-errors"></div>
+		 			</div> -->
 
 
 					<div class="col-md-12">
@@ -329,6 +333,8 @@
 							<button class="btn my-3 pull-right"><span>Send Message</span></button>
 						</div>
 					</div>
+
+				</form>
 			</div>
 
 		</div>
