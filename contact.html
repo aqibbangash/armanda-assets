@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+	/* ///// inputs /////*/
+
+	.contact-input:focus ~ label, textarea:focus ~ label, .contact-input:valid ~ label, textarea:valid ~ label {
+		font-size: 0.75em;
+		color: #999;
+		top: -5px;
+		-webkit-transition: all 0.225s ease;
+		transition: all 0.225s ease;
+	}
+
+	.styled-input {
+		float: left;
+		width: 293px;
+		margin: 1rem 0;
+		position: relative;
+		border-radius: 4px;
+	}
+
+	@media only screen and (max-width: 768px){
+		.styled-input {
+			width:100%;
+		}
+	}
+
+	.styled-input label {
+		color: #999;
+		padding: 1.3rem 30px 1rem 30px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		-webkit-transition: all 0.25s ease;
+		transition: all 0.25s ease;
+		pointer-events: none;
+	}
+
+	.styled-input.wide {
+		width: 650px;
+		max-width: 100%;
+	}
+
+	.contact-input,
+	textarea {
+		padding: 30px;
+		border: 0;
+		width: 100%;
+		font-size: 1rem;
+		background-color: #fff;
+		color: #000000;
+		border-radius: 4px;
+	}
+
+	.contact-input:focus,
+	textarea:focus { outline: 0; }
+
+	.contact-input:focus ~ span,
+	textarea:focus ~ span {
+		width: 100%;
+		-webkit-transition: all 0.075s ease;
+		transition: all 0.075s ease;
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 15em;
+	}
+
+	.input-container {
+		width: 650px;
+		max-width: 100%;
+		margin: 20px auto 25px auto;
+	}
+
+	.submit-btn {
+		float: right;
+		padding: 7px 35px;
+		border-radius: 60px;
+		display: inline-block;
+		background-color: #4b8cfb;
+		color: white;
+		font-size: 18px;
+		cursor: pointer;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+				  0 2px 10px 0 rgba(0,0,0,0.07);
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+
+	.submit-btn:hover {
+		transform: translateY(1px);
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+				  0 1px 1px 0 rgba(0,0,0,0.09);
+	}
+
+	@media (max-width: 768px) {
+		.submit-btn {
+			width:100%;
+			float: none;
+			text-align:center;
+		}
+	}
+
+	.contact-input[type=checkbox] + label {
+	  color: #ccc;
+	  font-style: italic;
+	}
+
+	.contact-input[type=checkbox]:checked + label {
+	  color: #f00;
+	  font-style: normal;
+	}
+</style>
+<head>
+<title>Armada Assets</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="ARMADA ASSETS" content="The top alternative asset providers in Australia. We are passionate about helping clients achieve their goals ..." />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+
+	<!-- google fonts -->
+
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<!-- //google fonts -->
+
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<div class="top-head container">
+		<div class="ml-auto text-right right-p">
+			<ul>
+				<li class="mr-2">
+					1-800-988-014
+        </li>
+        <li>|</li>
+				<li style="padding: 10px;">
+					Mon-Fri : 9am – 5pm
+        </li>
+				<li style="letter-spacing: 5px;">
+					<a href="https://twitter.com/armadaassets?lang=en"><span class="fa fa-twitter"></span></a>
+					<a href="https://www.linkedin.com/company/armada-assets/?originalSubdomain=pk"><span class="fa fa-linkedin"></span></a>
+					<a href="https://www.facebook.com/armadaassets/"><span class="fa fa-facebook"></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-3 d-lg-flex">
+			<div id="logo">
+        <a href="index.html">
+				   <img src="images/Logo.png" class="logo-width" alt="Logo" style="width: 90%; margin-top: -1.5em; margin-left: -1em;">
+        </a>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu ml-auto mt-1" id="myUL" style="margin-right: -1em; border-bottom: 1px solid #063c69; padding-bottom: 9px">
+				<li class="myLI"><a href="index.html">Home</a></li>
+				<li class="myLI"><a href="about.html">About Armada</a></li>
+				<li class="myLI"><a href="retail-oportunity.html">Retail Opportunities</a></li>
+				<li class="myLI"><a href="due-diligence.html">Due Diligence</a></li>
+				<li class="myLI"><a href=" resources.html">Resources</a></li>
+				<li class="myLI active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+
+
+<!-- banner -->
+<div class="banner-contact" id="home" >
+	<div class="layer">
+		<div class="container">
+			<div class="row">
+        <div class="col-lg-5 banner-text-w3pvt">
+        </div>
+				<div class="col-lg-7 banner-text-w3pvt resources-text">
+					<!-- banner slider-->
+					<div class="csslider infinity" id="slider1">
+						<ul class="banner_slide_bg" style="top: 10px;">
+							<li>
+								<div class="container-fluid">
+									<div class="w3ls_banner_txt">
+
+
+
+                    <h4 class="b-w3ltxt text-capitalize mt-md-4" style="text-align: right;">Armada Assets</h4>
+                    <hr align="right" width="40%" style="border: 2px solid #b08d5c;">
+										<h2 align="right" class="b-w3ltxt text-capitalize mt-md-2 b2-text" style="font-size: 20px; ">"Talk to us today"</h2>
+                  </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //banner slider-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- Leadership -->
+<section class="banner-bottom py-3" id="our-principle">
+	<div class="container py-lg-5">
+
+
+    <div class="row bottom-grids">
+			<div class="col-lg-6 col-sm-12 col-md-12">
+        <div class="our-services-text"  style="margin-top: 2em;">
+          <h2 class="heading mb-sm-5 mb-4" style="color: white;">Sydney Office</h2>
+          <p class="mt-4 text-justify" style="color: white; font-weight: normal;">Armada Assets is the leading asset providers in Australia. We aim to provide low risk opportunities with high anual yield. Our unparalled customer service and client first priority sets us apart.</p>
+					<p class="mt-4 text-justify" style="color: white; font-weight: normal;">From our home in Sydney, Australia our team strives to deliver opportunities and projects that are tailor made for our clients. Keeping sustainability and positive societal impact a strong basis for our product selection.</p>
+        </div>
+				<div class="row bottom-grids" style="margin-top: 1em;">
+					<div class="col-md-4 col-sm-6 details-border">
+		        <div class="our-services-text">
+		          <h6 class="company-details" style="color: white;">Company Details</h6>
+		          <p class="small font-weight-bold"  style="color: white; text-align: center;">Suite 16, 3 Richmond Avenue, Sylvania Waters, NSW 2224</p>
+
+		        </div>
+					</div>
+					<div class="col-md-4 col-sm-6 mt-sm-0 mt-4 details-border">
+		        <div class="our-services-text">
+		          <h6 class="company-details" style="color: white;">Contact Details</h6>
+		          <p class="small font-weight-bold" style="color: white; text-align: center;">1800 988 014</p>
+		          <p class="small font-weight-bold" style="color: white; text-align: center;">info@armadaassets.com.au</p>
+
+		        </div>
+					</div>
+					<div class="col-md-4 col-sm-6 mt-md-0 mt-4">
+		        <div class="our-services-text">
+		          <h6 class="company-details" style="color: white;">ABN Number</h6>
+		          <p class="small font-weight-bold" style="color: white; text-align: center;">46 168 888 757</p>
+		          <p class="small font-weight-bold" style="color: white; text-align: center;">Registered in Australia</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12 col-md-12">
+        <div class="our-services-text">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Suite%2016%2C%203%20Richmond%20Avenue%2C%20Sylvania%20Waters%2C%20NSW%202224%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">best buy voucher code</a>
+        </div>
+        <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+        </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Leadership -->
+
+
+<!-- Blog  -->
+<section class="team pt-5" id="team" style="background-color: #f3f3f3;">
+    <div class="container py-lg-5">
+	    <h2 class="heading mb-sm-5 mb-4" style=" text-align: center; margin-bottom: 2em!important;"> Contact Us</h2>
+      <div class="row" style="margin-bottom: 2em;">
+
+        <div class="container">
+
+
+			<div class="row input-container" style="margin-left:auto; margin-right:auto;">
+
+					<div class="col-md-12">
+						<div class="styled-input wide">
+							<input type="text" class="contact-input" required />
+							<label>Name</label>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="styled-input">
+							<input type="text" class="contact-input" required />
+							<label>Email</label>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="styled-input" style="float:right;">
+							<input type="text" class="contact-input" required />
+							<label>Phone Number</label>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="styled-input wide">
+							<textarea required class="contact-input"></textarea>
+							<label>Message</label>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+			 <div class="g-recaptcha pull-right" data-sitekey="6LeIEsMUAAAAAH4EYoslNkyGtYp8mMxNn6joWBjA" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+			 <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+			 <div class="help-block with-errors"></div>
+		 			</div>
+
+
+					<div class="col-md-12">
+						<div class="styled-input wide">
+							<button class="btn my-3 pull-right"><span>Send Message</span></button>
+						</div>
+					</div>
+			</div>
+
+		</div>
+
+
+  		</div>
+    </div>
+</section>
+<!-- //Blog -->
+
+
+<!-- subscribe -->
+<section class="banner-bottom py-3" id="subscribe">
+	<div class="container py-lg-5">
+    <h2 class="heading mb-sm-5 mb-4" style="color: white; text-transform: none!important; font-weight: 300!important;"><img src="images/envelope.png" style="width: 5%"/> &emsp;Want more insights like this?</h2>
+    <div class="col-lg-12">
+      <p class="mt-4" style="color: white; font-size: 18px;">Get our free, monthly e-newsletter bringing you valuable insights, opinion and education.</p>
+
+
+      <form class="" action="" method="post" style="margin-top:20px;">
+
+        <input type="email" name="usermail" value="" >
+        <button class="btn" style="padding: 5px 19px; display:inline-block;"><span>Subscribe</span></button>
+
+      </form>
+
+      <!-- <p class="mt-4" style="color: #78d1f3; font-size: 18px;">Subscribe &#8595;</p> -->
+    </div>
+	</div>
+</section>
+<!-- //subscribe -->
+
+
+<!-- footer -->
+<footer id="contact">
+	<div class="footer-layer py-sm-5 pt-5 pb-3" style="padding-bottom: 0rem!important;">
+		<div class="container py-md-3">
+      <div class="row">
+  			<div class="col-lg-8 col-md-11">
+          <img src="images/footer-logo.png" alt="Logo" style="width: 50%; margin-top: 1em;">
+          <p class="w3ls_pvt-title my-3 text-justify" style="color: #f5f5f5;">In this ever changing financial climate, traditional investments continue to be the bedrock of most private client portfolios. However there are an increasing number of inverstors who have identified the need to mitigate the risk associated with the traditional markets by diversifying into alternative investment opportunities.</p>
+          <p class="w3ls_pvt-title my-3 text-justify" style="color: #f5f5f5;">Armada Assets was formed by a team of experts with a combined professional experience of 30 years. We are based out of Sydney which is financial hub of Australia.</p>
+  			</div>
+
+  			<div class="col-lg-2 col-md-6 mt-lg-0 mt-4">
+          <p class="mt-4" style="color: white; font-size: 14px; font-weight:600; text-align: left;">Quick Links</p>
+          <ul class="quick-links" style="list-style: none; text-align: left; line-height: 30px;">
+            <li><a href="#" style="color: #f5f5f5;">About</a></li>
+            <li><a href="#" style="color: #f5f5f5;">Retail Opportunities</a></li>
+            <li><a href="#" style="color: #f5f5f5;">Due Diligence</a></li>
+            <li><a href="#" style="color: #f5f5f5;">Resources</a></li>
+            <li><a href="#" style="color: #f5f5f5;">Contact Us</a></li>
+          </ul>
+  			</div>
+        <div class="col-lg-2 col-md-6 mt-lg-0 mt-4">
+          <p class="mt-4" style="color: white; font-size: 14px; font-weight:600; text-align: left;">Contact Info</p>
+          <ul class="" style="list-style: none; text-align: left;">
+  					<li style="color: #f5f5f5; line-height: 30px;">Address:</li>
+  					<li style="line-height: 20px; color: #f5f5f5;">Suite 16, 3 Richmond</li>
+            <li style="line-height: 20px; color: #f5f5f5;">Avenue, Sylvania Waters,</li>
+            <li style="line-height: 20px; color: #f5f5f5;">NSW 2224 Australia</li>
+            <li style="color: #f5f5f5; line-height: 29px;">Phone:</li>
+            <li style="color: #f5f5f5;">1-800-988-014</li>
+            <li style="color: #f5f5f5; line-height: 20px;">Email:</li>
+            <li><a href="#" style="color: #f5f5f5;">info@armadaassets.com.au</a></li>
+  				</ul>
+
+  			</div>
+  		</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<section class="copyright">
+	<div class="container py-4">
+		<div class="row bottom" style="border-top: 1px solid #406074;">
+			<div class="col-lg-6 copy-right p-0">
+				<p class="" style="color: #f5f5f5; font-weight: 600;">Copyright © 2019 Armada Assets (Pty) Ltd.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top">
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+
+<!-- Ajax Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Adding active class to menu script -->
+<script>
+  // Add active class to the current button (highlight it)
+  // var header = document.getElementById("myUL");
+  // var btns = header.getElementsByClassName("myLI");
+  // for (var i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function() {
+  //   var current = document.getElementsByClassName("active");
+  //   current[0].className = current[0].className.replace(" active", "");
+  //   this.className += " active";
+  //   });
+  // }
+</script>
+<!-- End -->
+
+<!-- Insights -->
+<script>
+  var slideIndex = [1,1];
+  var slideId = ["mySlides1", "mySlides2"]
+  showSlides1(1, 0);
+  showSlides1(1, 1);
+
+  function plusSlides(n, no) {
+    showSlides1(slideIndex[no] += n, no);
+  }
+
+  function showSlides1(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+  }
+</script>
+<!-- End -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</body>
+</html>
