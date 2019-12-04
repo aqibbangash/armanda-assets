@@ -348,9 +348,11 @@
       <p class="mt-4" style="color: white; font-size: 18px;">Get our free, monthly e-newsletter bringing you valuable insights, opinion and education.</p>
 
 
-      <form class="" action="" method="post" style="margin-top:20px;">
+      <form class="" method="post" action="send_mail.php" style="margin-top:20px;">
 
-        <input type="email" name="usermail" value="" >
+        <input type="email" name="email_address" value="" >
+				<input type="hidden" name="first_name" value="New Subscriber" >
+				<input type="hidden" name="comments" value="New Subscriber" >
         <button class="btn" style="padding: 5px 19px; display:inline-block;"><span>Subscribe</span></button>
 
       </form>
